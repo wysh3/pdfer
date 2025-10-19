@@ -14,7 +14,7 @@ app = FastAPI(title="PDF Editor API", version="1.0.0")
 # Add CORS middleware to allow frontend requests
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://pdfer-flax.vercel.app", "http://localhost:3000", "http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
