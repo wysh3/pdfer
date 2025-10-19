@@ -586,7 +586,7 @@ const PDFUpload = () => {
         </div>
       )}
 
-{file && !isEncrypted && !processedFile && (
+{file && !isUploading && !isEncrypted && !processedFile && (
         <div className="border border-dark-700 rounded-lg p-6 bg-dark-800">
           <div className="flex justify-between items-center mb-4">
             <h3 className="text-lg font-medium text-light-900">Auto Age Adjustment</h3>
